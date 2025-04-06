@@ -1,0 +1,71 @@
+gryffindor = 0
+ravenclaw = 0
+hufflepuff = 0
+slytherin = 0
+
+print("¿Te gusta Dawn o Dusk?")
+print("1. Dawn")
+print("2. Dusk")
+
+r1 = int(input(" "))
+
+if r1 == 1:
+  gryffindor = gryffindor + 1
+  ravenclaw = ravenclaw + 1
+elif r1 == 2:
+  hufflepuff = hufflepuff + 1
+  slytherin = slytherin + 1
+else:
+  print("Error")
+
+print("Cuando esté muert@ quiero que me recuerden como...")
+print("1. El/la buen@")
+print("2. El/la grande")
+print("3. El/la sabi@")
+print("4. El/la calv@")
+r2 = int(input(" "))
+
+if r2 == 1:
+  hufflepuff = hufflepuff +2
+elif r2 == 2:
+  slytherin = slytherin + 2
+elif r2 == 3:
+  ravenclaw = ravenclaw + 2
+elif r2 == 4:
+  gryffindor = gryffindor + 2
+else:
+  print("Error")
+
+print("¿Qué clase de instrumento te gusta escuchar más?")
+print("1. El violín")
+print("2. La trompeta")
+print("3. El piano")
+print("4. El tambor")
+r3 = int(input(" "))
+
+if r3 == 1:
+  slytherin = ++ 4
+if r3 == 2:
+  hufflepuff = hufflepuff + 4
+if r3 == 3:
+  ravenclaw = ravenclaw + 4
+if r3 == 4:
+  gryffindor = gryffindor + 4
+else:
+  print("Error")
+
+print("Slytherin: ", slytherin)
+print("Hufflepuff: ", hufflepuff)
+print("Ravenclaw: ", ravenclaw)
+print("Gryffindor: ", gryffindor)
+
+if slytherin > hufflepuff and slytherin > ravenclaw and slytherin > gryffindor:
+  print("Tu casa es 'Slytherin'")
+elif hufflepuff > slytherin and hufflepuff > ravenclaw and hufflepuff > gryffindor:
+  print("Tu casa es 'Hufflepuff'")
+elif ravenclaw > slytherin and ravenclaw > hufflepuff and ravenclaw > gryffindor:
+  print("Tu casa es 'Ravenclaw'")
+elif gryffindor > slytherin and gryffindor > hufflepuff and gryffindor > ravenclaw:
+  print("Tu casa es ' Gryffindor'")
+else:
+  print("Error")
